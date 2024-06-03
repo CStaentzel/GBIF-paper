@@ -1,0 +1,28 @@
+#' @title
+#' Keep invasive species data only
+#' @description 
+#' Keep exotic species data only
+#' 
+#' @author Cybill Staentzel \cybill.staentzel@engees.unistra.fr
+#' 
+#' @date 2023/01/24
+#' 
+
+#Filter by providers----
+#1 research works or observations by confirmed naturalists
+#2 participatory and citizen science
+#3 marine species
+prov <- read.csv("...providers_referencenew_Inv.csv", sep=";") 
+prov <- read.csv("...providers_reference_fish.csv", sep=";") 
+
+prov$confidence_level<-as.factor(prov$confidence_level)
+#only level 1.
+prov1<-prov[prov$confidence_level=="1",]
+str(prov1)
+prov1$datasetkey
+length(prov1$datasetkey)
+
+#Keep only observation from providers level 1 
+tot_xeno1<- tot_xeno[tot_xeno$"datasetKey" %in% unique(prov1$"datasetkey"), ]
+length(unique(tot_xeno1$datasetKey))
+
