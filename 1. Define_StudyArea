@@ -1,7 +1,7 @@
 #' @title
 #' Define the study area 
 #' @description 
-#' Define the study area to extract GBIF Data for European Macroinvertebrates species
+#' Define the study area to extract GBIF Data for European Macroinvertebrates and fish species
 #' 
 #' @author Cybill Staentzel \cybill.staentzel@engees.unistra.fr
 #' 
