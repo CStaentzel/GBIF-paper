@@ -124,4 +124,4 @@ for (i in 1:length(periods)) {
 write.csv(downloads_info, "to define by user", row.names = FALSE)
 
 ##For rarefaction
-#All macroinvertebrates were extracted : PORIFERA, CNIDARIA, BRYOZOA, PLATYHELMINTHES, NEMATODA, ANNELIDA, MOLLUSCA, ARTHOPODA
+#All macroinvertebrates were extracted from GBIF : PORIFERA, CNIDARIA, BRYOZOA, PLATYHELMINTHES, NEMATODA, ANNELIDA, MOLLUSCA, ARTHOPODA

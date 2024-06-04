@@ -76,7 +76,7 @@ rownames(gbif_data) <- NULL
 gbif_data_sf <- sf::st_as_sf(gbif_data, coords = c("decimalLongitude", "decimalLatitude"),
                              crs = 4326)
 
-#We removed all observations in Russia
+#We removed all observations from Russia
 
 ## Export layers ---
 sf::st_write(gbif_data_sf, delete_dsn = TRUE,"to define by user".gpkg")
