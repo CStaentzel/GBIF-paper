@@ -1,19 +1,15 @@
 #' @title
-#' Filter by providers
+#' Filter by data publishers
 #' @description 
-#' We screened all providers of invasive data - and selected only research works or observations by confirmed naturalists
+#' We screened all data publishers of invasive data - and selected only research works or observations by confirmed naturalists
 #' 
 #' @author Cybill Staentzel \cybill.staentzel@engees.unistra.fr
 #' 
 #' @date 2023/01/24
-#' 
 
 #Filter by providers----
-#1 research works or observations by confirmed naturalists
-#2 participatory and citizen science
-#3 marine species
-prov <- read.csv("...providers_referencenew_Inv.csv", sep=";") 
-prov <- read.csv("...providers_reference_fish.csv", sep=";") 
+prov <- read.csv("Supplemental File3_FISH, sep=";") 
+prov <- read.csv("Supplemental File3_INVERTEBRATES.csv", sep=";") 
 
 prov$confidence_level<-as.factor(prov$confidence_level)
 #only level 1.

@@ -120,7 +120,6 @@ for (i in 1:length(periods)) {
 
 
 #Export zip.
-
 write.csv(downloads_info, "to define by user", row.names = FALSE)
 
 ##For rarefaction
