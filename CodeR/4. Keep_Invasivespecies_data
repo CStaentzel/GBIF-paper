@@ -14,14 +14,14 @@ dat    <- read.csv("to define by user.csv")
 ## Import filtered GBIF spatial data ---
 dat_sf <- sf::st_read("to define by user.gpkg")
 
-#Select only SpeciesxCountry keys from predefined lists (see Supplementary files)
+#Select only SpeciesxCountry keys from predefined lists
 ##Invertebrates
-Keys_JN_speciescountry <- read.csv("...Keys_JN_speciescountry.csv", sep=";")
+Supplemental File1_Invertebrates <- read.csv("...Supplemental File1_Invertebrates", sep=";")
 ##Fish
-
+Supplemental File1_Fish <- read.csv("...Supplemental File1_Fish", sep=";")
 
 #An example with one taxonomic group for macroinvertebrates : Bivalvia
-bivalvia_keys_final<- bivalvia_TRUE[bivalvia_TRUE$"concat" %in% unique(Keys_JN_speciescountry$"Keys_JN"), ]
+bivalvia_keys_final<- bivalvia_TRUE[bivalvia_TRUE$"concat" %in% unique(Supplemental File1_Invertebrates$"Keys_CS"), ]
 names(bivalvia_keys_final)<-c("download_key","datasetKey","occurrenceID","year", "eventDate", "class", "order", "family", "genus", 
                               "species", "period", "sovereignt", "concat","geom")
 View(bivalvia_keys_final)

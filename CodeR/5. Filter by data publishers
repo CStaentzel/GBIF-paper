@@ -7,18 +7,14 @@
 #' 
 #' @date 2023/01/24
 
-#Filter by providers----
+#Filter by data publishers for both fish and macroinvertebrates----
 prov <- read.csv("Supplemental File3_FISH, sep=";") 
 prov <- read.csv("Supplemental File3_INVERTEBRATES.csv", sep=";") 
 
 prov$confidence_level<-as.factor(prov$confidence_level)
-#only level 1.
-prov1<-prov[prov$confidence_level=="1",]
-str(prov1)
-prov1$datasetkey
-length(prov1$datasetkey)
 
-#Keep only observation from providers level 1 
-tot_xeno1<- tot_xeno[tot_xeno$"datasetKey" %in% unique(prov1$"datasetkey"), ]
-length(unique(tot_xeno1$datasetKey))
+prov1_2 <- prov[prov$confidence_level %in% c("1", "2"), ]
+length(prov1_2$datasetkey)
 
+tot_xeno1_2<- tot_xeno[tot_xeno$"datasetKey" %in% unique(prov1_2$"datasetkey"), ]
+length(unique(tot_xeno1_2$datasetKey))
