@@ -36,7 +36,7 @@ This project uses the following databases:
 
 | Database      | Usage                          | Reference       |                   Link                   |
 |:--------------|:-------------------------------|:----------------|:----------------------------------------:|
-| GBIF          | Get occurrences at World scale | GBIF.org (2024) |      [link](https://www.gbif.org/)       |
+| GBIF          | Get species occurrences        | GBIF.org (2024) |      [link](https://www.gbif.org/)       |
 | Natural Earth | Create a World grid            | None            | [link](https://www.naturalearthdata.com) |
 
 
@@ -55,9 +55,8 @@ This repository is structured as follow:
 
 ### System requirements
 
-This project handles spatial objects with the R packages
-[`sf`](https://r-spatial.github.io/sf/) and
-[`terra`](https://rspatial.github.io/terra/) and require some additional
+This project handles spatial objects with the R package
+[`sf`](https://r-spatial.github.io/sf/) and requires some additional
 software: GDAL, GEOS, and PROJ.
 
 ### GBIF account
@@ -135,7 +134,6 @@ This project has been developed for the
 research group
 [Navidiv](https://www.fondationbiodiversite.fr/en/the-frb-in-action/programs-and-projects/le-cesab/navidiv/)
 that aims to provide useful synthetic knowledge and guidelines to prioritize management and restoration actions considering the various human uses of waterwayscapes.
-
 
 
 
