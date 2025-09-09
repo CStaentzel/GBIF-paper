@@ -26,7 +26,7 @@ Freshwater navigation canals support invasive species across spatial scales <img
 
 This research compendium provides code and data used to reproduce analyses of the paper: 
 
-> Sexton AN _et al._ (2024) Freshwater navigation canals support invasive species across spatial scales. Submitted.
+> Sexton AN _et al._ (2024) Freshwater navigation canals support invasive species across spatial scales. Submitted to Diversity and Distributions.
 
 
 
